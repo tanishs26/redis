@@ -5,6 +5,7 @@ import Design from "@/components/Design";
 import Stack from "@/components/Stack";
 import Marque from "@/components/Marquee";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const Page = () => {
   return (
