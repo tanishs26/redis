@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&display=swap");
+
+@import "tailwindcss";
+
+@theme inline {
+  --font-main: "Space Grotesk", sans-serif;
+  --color-reda: #fefefe;
+  --color-redis: #091a23;
+  --font-title: "Bebas Neue", "Space Grotesk";
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@theme {
+  --animate-rotate-border: border-rotate 3s linear infinite;
+  @keyframes border-rotate {
+    from {
+      --border-angle: 0deg;
+    }
+    to {
+      --border-angle: 360deg;
+    }
+  }
+}
+@theme {
+
+  --animate-marquee: marquee 10s linear infinite;
+  --animate-marquee2: marquee2 10s linear infinite;
+   @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+   @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
